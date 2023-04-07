@@ -18,7 +18,26 @@ function divide(a,b){
     return a/b;
 }
 
-console.log(add(10,5));
-console.log(substract(10,5));
-console.log(multiply(10,5));
-console.log(divide(10,5));
+function operate(operator, operand1, operand2){
+    switch(operator){
+        case '+':
+            return add(operand1, operand2);
+            break;
+        case '-':
+            return substract(operand1, operand2);
+            break;
+        case '*':
+            return multiply(operand1, operand2);
+            break;
+        case '/':
+            return divide(operand1, operand2);
+            break;
+        default:
+            return 0;
+    }
+}
+
+console.log(operate('+',10,5));
+console.log(operate('-',10,5));
+console.log(operate('*',10,5));
+console.log(operate('/',10,5));
