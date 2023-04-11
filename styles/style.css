@@ -1,0 +1,69 @@
+
+.container, body, html {
+    height: 100%;
+    box-sizing: content-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen{
+    height: 20%;
+    width: 90%;
+    background-color: lime;
+    margin: 20px auto;
+}
+
+.buttons{
+    border: purple 1px solid;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.button{
+    height: 100px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.mainButtons{
+    border: 1px dotted dodgerblue;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.upperButtons{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+}
+
+.numberButtons{
+    border: 1px dotted red;
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+}
+
+.operateButtons{
+    border: 1px dotted green;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
