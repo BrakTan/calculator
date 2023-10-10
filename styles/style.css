@@ -22,7 +22,20 @@
     height: 20%;
     width: 90%;
     background-color: lime;
+    opacity: 0.5;
     margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.oldOperation{
+    flex: 1;
+    border: 1px solid black;
+}
+
+.currentOperation{
+    flex:1;
+    border: 1px solid red
 }
 
 .buttons{
